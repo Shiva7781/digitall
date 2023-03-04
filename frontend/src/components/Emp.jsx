@@ -6,7 +6,9 @@ const Emp = () => {
 
   const fetchData = async () => {
     try {
-      const { data } = await axios.get(`http://localhost:7781/api/emps`);
+      const { data } = await axios.get(
+        `https://uptight-ant-toga.cyclic.app/api/emps`
+      );
 
       setEmpData(data);
       // console.log("data:", data);

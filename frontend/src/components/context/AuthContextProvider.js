@@ -13,7 +13,7 @@ const AuthContextProvider = ({ children }) => {
   const login = async (payload) => {
     try {
       let { data } = await axios.post(
-        "http://localhost:7781/api/users/login",
+        "https://uptight-ant-toga.cyclic.app/api/users/login",
         payload
       );
 
@@ -36,11 +36,14 @@ const AuthContextProvider = ({ children }) => {
     console.log("payload:", payload);
 
     try {
-      await axios.post("http://localhost:7781/api/users/register", payload);
+      await axios.post(
+        "https://uptight-ant-toga.cyclic.app/api/users/register",
+        payload
+      );
 
       alert("Signup Successful");
       setTimeout(() => {
-        // navigate("/");
+        navigate("/");
       }, 1234);
     } catch (err) {
       console.log("err:", err);
