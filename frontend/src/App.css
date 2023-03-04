@@ -1,0 +1,138 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+.App {
+  text-align: center;
+}
+
+/* Navbar */
+nav {
+  /* border: 1px solid red; */
+  height: 3rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: crimson;
+}
+
+nav ul {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+
+li {
+  list-style: none;
+  margin: 1rem;
+  font-size: 1.3rem;
+  font-weight: 500;
+}
+
+a {
+  text-decoration: none;
+  color: black;
+}
+
+/* form */
+.signup_page,
+.login_page {
+  width: 360px;
+  padding: 8% 0 0;
+  margin: auto;
+}
+
+.form {
+  position: relative;
+  z-index: 1;
+  background: #ffffff;
+  max-width: 360px;
+  margin: 0 auto 18px;
+  padding: 45px;
+  text-align: center;
+  border-radius: 7px;
+  box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.2), 0 5px 5px 0 rgba(0, 0, 0, 0.24);
+}
+.form h3 {
+  margin: 0 0 11px;
+  color: #4caf50;
+}
+
+.form input {
+  font-family: "Roboto", sans-serif;
+  outline: 0;
+  background: #f2f2f2;
+  width: 100%;
+  border: 0;
+  margin: 0 0 1.5rem;
+  padding: 1rem;
+  box-sizing: border-box;
+  font-size: 0.8rem;
+  border-radius: 0.25rem;
+}
+
+.form button {
+  font-family: "Roboto", sans-serif;
+  text-transform: uppercase;
+  outline: 0;
+  background: #4caf50;
+  width: 100%;
+  border: 0;
+  padding: 15px;
+  color: #ffffff;
+  font-size: 0.8rem;
+  transition: all 0.3 ease;
+  cursor: pointer;
+  border-radius: 0.25rem;
+}
+
+.form button:disabled {
+  background: gray;
+  cursor: not-allowed;
+}
+
+.form + div > a {
+  color: #4caf50;
+  text-decoration: none;
+}
+
+/* EmpDetails */
+
+.EmpDetails {
+  display: grid;
+  place-items: center;
+  margin: 3rem;
+}
+
+.EmpDetails > img {
+  width: 7rem;
+  border-radius: 50%;
+  margin-top: 3rem;
+}
+
+.EmpDetails > table,
+th,
+td {
+  padding: 0rem 1rem;
+  border-collapse: collapse;
+  border: 1px solid black;
+}
+
+.EmpDetails img {
+  margin: 11px;
+  border-radius: 22px;
+  width: 10rem;
+}
+
+.EmpDetails > button {
+  margin: 1rem;
+  padding: 0.3rem;
+  width: 83px;
+  cursor: pointer;
+  background-color: crimson;
+  border: none;
+  border-radius: 10px;
+  color: white;
+}
